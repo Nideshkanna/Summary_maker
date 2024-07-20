@@ -1,0 +1,33 @@
+We'll create a Python script that reads a text file, processes the text, and generates a summary using the Natural Language Toolkit (nltk) library. Here's a step-by-step guide:
+
+  1.Install NLTK: First, you need to install the nltk library if you haven't already. You can install it using pip:
+
+         pip install nltk
+
+  2.Download NLTK Data: You need to download the necessary NLTK data files. You can do this within your Python script or in a separate script:
+
+         import nltk
+         nltk.download('punkt')
+         nltk.download('stopwords')
+
+  3.Create the Summary Maker Script: Refer the Python script that reads a text file, processes it, and generates a summary.
+
+
+  4.How to Use the Script
+
+          Save the Script: Save the above script as summary_maker.py.
+
+          Prepare an Input File: Create a text file named input.txt in the same directory as the script and add the text you want to summarize.
+
+          Run the Script: Run the script from the command line:
+
+                     python summary_maker.py
+         
+          Output: The script will print the summary of the text in the input.txt file.
+  
+  Customizing the Script
+
+  5.Adjust Summary Length: You can change the summary_length parameter in the summarize function to control how many sentences are included in the summary.
+    
+  6.Improving Sentence Scoring: The current method for scoring sentences is based on word frequency. You can improve this by using more advanced techniques such as TF-IDF or considering sentence position.
+
